@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompilator języka Giava do C</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-text">
+                <h1>Lorem impsum</h1>
+                <p>Lorem impsum</p>
+            </div>
+            <div class="header-buttons">
+                <span class="skill-tag" id="compile-btn">1</span>
+                <span class="skill-tag" id="load-btn">2</span>
+                <input type="file" id="file-input" style="display:none" accept=".txt,.giava,.java,.c"/>
+                <span class="skill-tag" id="save-btn">Zapisz do pliku</span>
+                <span class="skill-tag" id="white-mode">Dark Mode</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+
+            <aside class="sidebar">
+                <section class="main-section card fade-in" id="section0">
+                    <h2>Input</h2>
+                    <p>
+                        dddddd
+                    </p>
+                </section>
+            </aside>
+
+            <main class="main-column">
+                <section class="main-section card fade-in" id="section1">
+                    <h2>ddd</h2>
+                    <pre id="messages"></pre>
+                </section>
+
+                <section class="main-section card fade-in" id="section2">
+                    <h2>Output</h2>
+                    <p>
+                        Lorem impsum
+                    </p>
+                    <pre id="output"></pre>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">
+            This is a project by Mateusz Bielówka and Berenike Banek, intended exclusively for educational purposes; commercial use is prohibited.
+        </footer>
+
+    </div>
+
+<!--Skrypty:-->
+
+    <script src="{{ url_for('static', filename='mylang.js') }}"></script>
+
+
+
+
+
+
+</body>
+</html>
