@@ -1,13 +1,16 @@
 import os
 
 import numpy as np
+import asyncio
 
 from src.utils import (
     read_files,
     tokenize_text,
     create_frequency_table,
     check_zipf_law,
-    create_concurrence_graph
+    create_concurrence_graph,
+    ninety_percent,
+    find_most_common_nouns
 )
 
 
@@ -28,7 +31,9 @@ def main():
 
     check_zipf_law(freq_table)
     create_concurrence_graph(flat_list)
-
+    # ninety_percent(freq_table)
+    english_words = asyncio.run(find_most_common_nouns(freq_table))
+    print(english_words)
 
 if __name__ == "__main__":
     main()

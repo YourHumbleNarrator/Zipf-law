@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from collections import Counter
 import networkx as nx
+from googletrans import Translator
 
 
 def read_files(path):
@@ -67,3 +68,22 @@ def create_concurrence_graph(list_of_tokens):
     number_of_neighbors = sorted(number_of_neighbors, key=lambda x: x[1], reverse=True)
     language_core = number_of_neighbors[:50]
     return language_core
+
+def ninety_percent(freq_table):
+    words_to_learn = []
+    print(np.sum(freq_table['freq'].tolist()[:3]))
+    for i in range(len(freq_table['freq'].tolist())):
+        if np.sum(freq_table['freq'].tolist()[:i]) / np.sum(freq_table['freq'].tolist()) < 0.9:
+            words_to_learn.append(freq_table['word'].tolist()[i])
+        else: break
+    return words_to_learn
+
+
+
+async def find_most_common_nouns(freq_table):
+    english_words = []
+    async with Translator() as translator:
+        for word in freq_table['word'].tolist()[:500]:
+            result = await translator.translate(word, src='pt', dest='en')
+            english_words.append(result.text)
+    return english_words
