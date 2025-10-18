@@ -9,7 +9,8 @@ from src.utils import (
     create_frequency_table,
     check_zipf_law,
     create_concurrence_graph,
-    ninety_percent,
+    get_language_core,
+    find_most_useful_words,
     find_most_common_nouns
 )
 
@@ -30,10 +31,11 @@ def main():
     print(freq_table.head())
 
     check_zipf_law(freq_table)
-    create_concurrence_graph(flat_list)
-    # ninety_percent(freq_table)
+    concurrence_graph = create_concurrence_graph(flat_list)
+    language_core = get_language_core(concurrence_graph)
+    # find_most_useful_words(freq_table)
     english_words = asyncio.run(find_most_common_nouns(freq_table))
-    print(english_words)
+    # print(english_words)
 
 if __name__ == "__main__":
     main()
