@@ -1,7 +1,9 @@
 import re
 import os
+import numpy as np
 import pandas as pd
 from collections import Counter
+import networkx as nx
 
 
 def read_files(path):
@@ -42,14 +44,26 @@ def create_frequency_table(tokenslist):
 
 def check_zipf_law(df):
     # TODO
+    frequencies = df['freq'].tolist()
+    zipf_law = [(x+1)*frequencies[x] for x in list(df.index)]
+    av = np.average(zipf_law)
+    st_dev = np.std(zipf_law)
+    var = np.var(zipf_law)
+    # print(f'Average: {av}\nStandard deviation: {st_dev}\nVariance: {var}')
+
     parameter = 0
     return {
         "parameter": parameter
     }
 
 
-def create_concurence_graph():
-    # TODO
-    nodes = []
-    edges = []
-    return nodes, edges
+def create_concurrence_graph(list_of_tokens):
+    # TODO zwraca rdzeń języka jako listę krotek - ('słowo', liczba sąsiadów)
+    G = nx.Graph()
+    G.add_nodes_from(list_of_tokens)
+    for i in range(len(list_of_tokens) - 1):
+        G.add_edge(list_of_tokens[i], list_of_tokens[i+1])
+    number_of_neighbors = [(x, len(list(G.neighbors(x)))) for x in G.nodes()]
+    number_of_neighbors = sorted(number_of_neighbors, key=lambda x: x[1], reverse=True)
+    language_core = number_of_neighbors[:50]
+    return language_core

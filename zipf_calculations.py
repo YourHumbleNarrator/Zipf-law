@@ -7,7 +7,7 @@ from src.utils import (
     tokenize_text,
     create_frequency_table,
     check_zipf_law,
-    create_concurence_graph
+    create_concurrence_graph
 )
 
 
@@ -25,6 +25,9 @@ def main():
 
     freq_table = create_frequency_table(flat_list)
     print(freq_table.head())
+
+    check_zipf_law(freq_table)
+    create_concurrence_graph(flat_list)
 
 
 if __name__ == "__main__":
