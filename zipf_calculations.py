@@ -35,7 +35,7 @@ def main():
     language_core = get_language_core(concurrence_graph)
     # find_most_useful_words(freq_table)
     english_words = asyncio.run(find_most_common_nouns(freq_table))
-    # print(english_words)
+    print(english_words)
 
 if __name__ == "__main__":
     main()

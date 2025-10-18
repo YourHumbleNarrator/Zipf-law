@@ -82,14 +82,15 @@ def find_most_useful_words(freq_table):
 async def find_most_common_nouns(freq_table):
     nltk.download('averaged_perceptron_tagger_eng')
     english_words = []
-    async with Translator() as translator:
+    async with (Translator() as translator):
         for word in freq_table['word'].tolist():
             result = await translator.translate(word, src='pt', dest='en')
             text = result.text
             ans = nltk.pos_tag([text])
             val = ans[0][1]
-            if (val == 'NN' or val == 'NNS' or val == 'NNPS' or val == 'NNP'):
-                english_words.append(result.text)
+            pattern1 = re.compile("\b[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{1,3}\b")
+            if (val == 'NN' or val == 'NNS' or val == 'NNPS' or val == 'NNP') and not pattern1.match(text):
+                english_words.append(text)
             if len(english_words) >= 50:
                 break
 
