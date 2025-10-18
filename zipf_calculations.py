@@ -23,6 +23,8 @@ def main():
             flat_list.append(token)
     print(len(flat_list))
 
+    freq_table = create_frequency_table(flat_list)
+    print(freq_table.head())
 
 
 if __name__ == "__main__":
