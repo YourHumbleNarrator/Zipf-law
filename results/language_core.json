@@ -1,0 +1,202 @@
+[
+    {
+        "word": "de",
+        "neighbors": 3880
+    },
+    {
+        "word": "e",
+        "neighbors": 3467
+    },
+    {
+        "word": "a",
+        "neighbors": 3008
+    },
+    {
+        "word": "o",
+        "neighbors": 2254
+    },
+    {
+        "word": "que",
+        "neighbors": 1758
+    },
+    {
+        "word": "em",
+        "neighbors": 1594
+    },
+    {
+        "word": "da",
+        "neighbors": 1512
+    },
+    {
+        "word": "do",
+        "neighbors": 1460
+    },
+    {
+        "word": "com",
+        "neighbors": 1090
+    },
+    {
+        "word": "para",
+        "neighbors": 1072
+    },
+    {
+        "word": "um",
+        "neighbors": 1032
+    },
+    {
+        "word": "os",
+        "neighbors": 1020
+    },
+    {
+        "word": "uma",
+        "neighbors": 981
+    },
+    {
+        "word": "na",
+        "neighbors": 904
+    },
+    {
+        "word": "no",
+        "neighbors": 900
+    },
+    {
+        "word": "as",
+        "neighbors": 798
+    },
+    {
+        "word": "por",
+        "neighbors": 770
+    },
+    {
+        "word": "como",
+        "neighbors": 757
+    },
+    {
+        "word": "se",
+        "neighbors": 688
+    },
+    {
+        "word": "dos",
+        "neighbors": 663
+    },
+    {
+        "word": "é",
+        "neighbors": 640
+    },
+    {
+        "word": "ao",
+        "neighbors": 619
+    },
+    {
+        "word": "mais",
+        "neighbors": 578
+    },
+    {
+        "word": "não",
+        "neighbors": 553
+    },
+    {
+        "word": "das",
+        "neighbors": 519
+    },
+    {
+        "word": "ou",
+        "neighbors": 517
+    },
+    {
+        "word": "foi",
+        "neighbors": 446
+    },
+    {
+        "word": "mas",
+        "neighbors": 415
+    },
+    {
+        "word": "era",
+        "neighbors": 379
+    },
+    {
+        "word": "são",
+        "neighbors": 369
+    },
+    {
+        "word": "à",
+        "neighbors": 349
+    },
+    {
+        "word": "sua",
+        "neighbors": 348
+    },
+    {
+        "word": "seu",
+        "neighbors": 285
+    },
+    {
+        "word": "pela",
+        "neighbors": 284
+    },
+    {
+        "word": "entre",
+        "neighbors": 283
+    },
+    {
+        "word": "muito",
+        "neighbors": 283
+    },
+    {
+        "word": "também",
+        "neighbors": 278
+    },
+    {
+        "word": "nos",
+        "neighbors": 262
+    },
+    {
+        "word": "ser",
+        "neighbors": 256
+    },
+    {
+        "word": "pelo",
+        "neighbors": 247
+    },
+    {
+        "word": "nas",
+        "neighbors": 239
+    },
+    {
+        "word": "quando",
+        "neighbors": 214
+    },
+    {
+        "word": "sobre",
+        "neighbors": 212
+    },
+    {
+        "word": "aos",
+        "neighbors": 210
+    },
+    {
+        "word": "ainda",
+        "neighbors": 191
+    },
+    {
+        "word": "já",
+        "neighbors": 187
+    },
+    {
+        "word": "até",
+        "neighbors": 183
+    },
+    {
+        "word": "foram",
+        "neighbors": 182
+    },
+    {
+        "word": "ele",
+        "neighbors": 177
+    },
+    {
+        "word": "onde",
+        "neighbors": 168
+    }
+]

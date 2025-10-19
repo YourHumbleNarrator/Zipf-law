@@ -35,7 +35,7 @@ def main():
     freq_table_json = freq_table.to_dict(orient="records")
 
     with open("results/frequency_table.json", "w", encoding="utf-8") as f:
-        json.dump(freq_table_json, f, ensure_ascii=False, indent=4)
+        json.dump(freq_table_json, f, ensure_ascii=True, indent=4)
 
     zipf_stats = check_zipf_law(freq_table)
     with open("results/zipf_stats.json", "w", encoding="utf-8") as f:
@@ -44,11 +44,11 @@ def main():
     concurrence_graph = create_concurrence_graph(flat_list)
     language_core = get_language_core(concurrence_graph)
     with open("results/language_core.json", "w", encoding="utf-8") as f:
-        json.dump([{"word": w, "neighbors": n} for w, n in language_core], f, ensure_ascii=False, indent=4)
+        json.dump([{"word": w, "neighbors": n} for w, n in language_core], f, ensure_ascii=True, indent=4)
 
     useful_words = find_most_useful_words(freq_table)
     with open("results/useful_words.json", "w", encoding="utf-8") as f:
-        json.dump(useful_words, f, ensure_ascii=False, indent=4)
+        json.dump(useful_words, f, ensure_ascii=True, indent=4)
 
     english_nouns = asyncio.run(find_most_common_nouns(freq_table))
     with open("results/common_nouns.json", "w", encoding="utf-8") as f:

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Frequency Table</title>
+  <style>
+  </style>
+</head>
+<body>
+  <h1>Common Nouns Frequency Table</h1>
+  <table id="freq-table">
+    <thead>
+      <tr>
+        <th>Word</th>
+        <th>Frequency</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function loadFrequencyTable() {
+      const response = await fetch("/api/frequency_table");
+      const data = await response.json();
+
+      const tbody = document.querySelector("#freq-table tbody");
+      tbody.innerHTML = "";
+
+      data.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${row.word}</td><td>${row.freq}</td>`;
+        tbody.appendChild(tr);
+      });
+    }
+
+    loadFrequencyTable();
+  </script>
+</body>
+</html>
