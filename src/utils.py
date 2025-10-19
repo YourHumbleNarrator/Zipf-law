@@ -23,6 +23,7 @@ def read_files(path):
 
     return fileslist
 
+
 def tokenize_text(text):
     # TODO: dzieli tekst na zdania, usuwa zbędne znaki, zwraca liste wyrazów
     text = re.sub(r'\b[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{1,3}\.\b', '', text)  # simple abbreviations
@@ -33,6 +34,7 @@ def tokenize_text(text):
     list_of_words = text.split()
     return list_of_words
 
+
 def create_frequency_table(tokenslist):
     # TODO: tworzy dataframe z polami słowo, częstotliwość z listy tokenów
     frequencies = Counter(tokenslist)
@@ -40,10 +42,11 @@ def create_frequency_table(tokenslist):
     df = df.sort_values(by="freq", ascending=False).reset_index(drop=True)
     return df
 
+
 def check_zipf_law(df):
     # TODO
     frequencies = df['freq'].tolist()
-    zipf_law = [(x+1)*frequencies[x] for x in list(df.index)]
+    zipf_law = [(x + 1) * frequencies[x] for x in list(df.index)]
     av = np.average(zipf_law)
     st_dev = np.std(zipf_law)
     var = np.var(zipf_law)
@@ -55,14 +58,16 @@ def check_zipf_law(df):
         "variance": var,
     }
 
+
 def create_concurrence_graph(list_of_tokens):
     # TODO zwraca rdzeń języka jako listę krotek - ('słowo', liczba sąsiadów)
     G = nx.Graph()
     G.add_nodes_from(list_of_tokens)
     for i in range(len(list_of_tokens) - 1):
-        G.add_edge(list_of_tokens[i], list_of_tokens[i+1])
+        G.add_edge(list_of_tokens[i], list_of_tokens[i + 1])
 
     return G
+
 
 def get_language_core(G):
     number_of_neighbors = [(x, len(list(G.neighbors(x)))) for x in G.nodes()]
@@ -70,28 +75,34 @@ def get_language_core(G):
     language_core = number_of_neighbors[:50]
     return language_core
 
+
 def find_most_useful_words(freq_table):
-    words_to_learn = []
-    print(np.sum(freq_table['freq'].tolist()[:3]))
+    useful_words = []
     for i in range(len(freq_table['freq'].tolist())):
         if np.sum(freq_table['freq'].tolist()[:i]) / np.sum(freq_table['freq'].tolist()) < 0.9:
-            words_to_learn.append(freq_table['word'].tolist()[i])
-        else: break
-    return words_to_learn
+            useful_words.append(freq_table['word'].tolist()[i])
+        else:
+            break
+    return useful_words
+
 
 async def find_most_common_nouns(freq_table):
-    nltk.download('averaged_perceptron_tagger_eng')
-    english_words = []
-    async with (Translator() as translator):
-        for word in freq_table['word'].tolist():
-            result = await translator.translate(word, src='pt', dest='en')
-            text = result.text
-            ans = nltk.pos_tag([text])
-            val = ans[0][1]
-            pattern1 = re.compile("\b[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{1,3}\b")
-            if (val == 'NN' or val == 'NNS' or val == 'NNPS' or val == 'NNP') and not pattern1.match(text):
-                english_words.append(text)
-            if len(english_words) >= 50:
-                break
+    nltk.download('averaged_perceptron_tagger_eng', quiet=True)
 
-    return english_words
+    consonant_pattern = re.compile(r"^[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{1,3}$")
+    contains_space = re.compile(r"\s")
+    english_nouns = []
+    translator = Translator()
+
+    for word in freq_table['word'].tolist():
+        result = await translator.translate(word, src='pt', dest='en')
+        text = result.text
+        tag = nltk.pos_tag([text])[0][1]
+
+        if tag.startswith('NN') and not consonant_pattern.match(text) and not contains_space.search(text):
+            english_nouns.append(text)
+
+        if len(english_nouns) >= 50:
+            break
+
+    return english_nouns
