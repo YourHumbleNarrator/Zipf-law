@@ -80,7 +80,7 @@
         "neighbors": 663
     },
     {
-        "word": "é",
+        "word": "\u00e9",
         "neighbors": 640
     },
     {
@@ -92,7 +92,7 @@
         "neighbors": 578
     },
     {
-        "word": "não",
+        "word": "n\u00e3o",
         "neighbors": 553
     },
     {
@@ -116,11 +116,11 @@
         "neighbors": 379
     },
     {
-        "word": "são",
+        "word": "s\u00e3o",
         "neighbors": 369
     },
     {
-        "word": "à",
+        "word": "\u00e0",
         "neighbors": 349
     },
     {
@@ -144,7 +144,7 @@
         "neighbors": 283
     },
     {
-        "word": "também",
+        "word": "tamb\u00e9m",
         "neighbors": 278
     },
     {
@@ -180,11 +180,11 @@
         "neighbors": 191
     },
     {
-        "word": "já",
+        "word": "j\u00e1",
         "neighbors": 187
     },
     {
-        "word": "até",
+        "word": "at\u00e9",
         "neighbors": 183
     },
     {

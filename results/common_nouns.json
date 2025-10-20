@@ -1,52 +1,202 @@
 [
-    "node",
-    "put",
-    "water",
-    "wind",
-    "years",
-    "saints",
-    "simões",
-    "winds",
-    "part",
-    "shape",
-    "amaro",
-    "century",
-    "Earth",
-    "study",
-    "activity",
-    "life",
-    "winston",
-    "art",
-    "system",
-    "tile",
-    "et",
-    "time",
-    "air",
-    "tiles",
-    "al",
-    "airport",
-    "Portugal",
-    "others",
-    "time",
-    "canon",
-    "sir",
-    "energy",
-    "others",
-    "times",
-    "home",
-    "days",
-    "people",
-    "side",
-    "planet",
-    "world",
-    "thousand",
-    "day",
-    "work",
-    "health",
-    "madam",
-    "work",
-    "party",
-    "fence",
-    "studies",
-    "John"
+    {
+        "English": "node",
+        "Portuguese": "no"
+    },
+    {
+        "English": "put",
+        "Portuguese": "por"
+    },
+    {
+        "English": "water",
+        "Portuguese": "água"
+    },
+    {
+        "English": "wind",
+        "Portuguese": "vento"
+    },
+    {
+        "English": "years",
+        "Portuguese": "anos"
+    },
+    {
+        "English": "saints",
+        "Portuguese": "santos"
+    },
+    {
+        "English": "simões",
+        "Portuguese": "simões"
+    },
+    {
+        "English": "winds",
+        "Portuguese": "ventos"
+    },
+    {
+        "English": "part",
+        "Portuguese": "parte"
+    },
+    {
+        "English": "shape",
+        "Portuguese": "forma"
+    },
+    {
+        "English": "amaro",
+        "Portuguese": "amaro"
+    },
+    {
+        "English": "century",
+        "Portuguese": "século"
+    },
+    {
+        "English": "Earth",
+        "Portuguese": "terra"
+    },
+    {
+        "English": "activity",
+        "Portuguese": "atividade"
+    },
+    {
+        "English": "study",
+        "Portuguese": "estudo"
+    },
+    {
+        "English": "winston",
+        "Portuguese": "winston"
+    },
+    {
+        "English": "life",
+        "Portuguese": "vida"
+    },
+    {
+        "English": "art",
+        "Portuguese": "arte"
+    },
+    {
+        "English": "system",
+        "Portuguese": "sistema"
+    },
+    {
+        "English": "time",
+        "Portuguese": "vez"
+    },
+    {
+        "English": "tile",
+        "Portuguese": "azulejo"
+    },
+    {
+        "English": "et",
+        "Portuguese": "et"
+    },
+    {
+        "English": "tiles",
+        "Portuguese": "azulejaria"
+    },
+    {
+        "English": "air",
+        "Portuguese": "ar"
+    },
+    {
+        "English": "al",
+        "Portuguese": "al"
+    },
+    {
+        "English": "airport",
+        "Portuguese": "aeroporto"
+    },
+    {
+        "English": "Portugal",
+        "Portuguese": "portugal"
+    },
+    {
+        "English": "others",
+        "Portuguese": "outros"
+    },
+    {
+        "English": "time",
+        "Portuguese": "tempo"
+    },
+    {
+        "English": "canon",
+        "Portuguese": "conego"
+    },
+    {
+        "English": "sir",
+        "Portuguese": "senhor"
+    },
+    {
+        "English": "energy",
+        "Portuguese": "energia"
+    },
+    {
+        "English": "others",
+        "Portuguese": "outras"
+    },
+    {
+        "English": "days",
+        "Portuguese": "dias"
+    },
+    {
+        "English": "home",
+        "Portuguese": "casa"
+    },
+    {
+        "English": "times",
+        "Portuguese": "vezes"
+    },
+    {
+        "English": "people",
+        "Portuguese": "pessoas"
+    },
+    {
+        "English": "side",
+        "Portuguese": "lado"
+    },
+    {
+        "English": "planet",
+        "Portuguese": "planeta"
+    },
+    {
+        "English": "world",
+        "Portuguese": "mundo"
+    },
+    {
+        "English": "thousand",
+        "Portuguese": "mil"
+    },
+    {
+        "English": "day",
+        "Portuguese": "dia"
+    },
+    {
+        "English": "health",
+        "Portuguese": "saúde"
+    },
+    {
+        "English": "work",
+        "Portuguese": "obra"
+    },
+    {
+        "English": "madam",
+        "Portuguese": "senhora"
+    },
+    {
+        "English": "work",
+        "Portuguese": "trabalho"
+    },
+    {
+        "English": "fence",
+        "Portuguese": "cerca"
+    },
+    {
+        "English": "party",
+        "Portuguese": "partido"
+    },
+    {
+        "English": "studies",
+        "Portuguese": "estudos"
+    },
+    {
+        "English": "John",
+        "Portuguese": "joão"
+    }
 ]

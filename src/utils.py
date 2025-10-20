@@ -100,7 +100,7 @@ async def find_most_common_nouns(freq_table):
         tag = nltk.pos_tag([text])[0][1]
 
         if tag.startswith('NN') and not consonant_pattern.match(text) and not contains_space.search(text):
-            english_nouns.append(text)
+            english_nouns.append((text, word))
 
         if len(english_nouns) >= 50:
             break

@@ -51,8 +51,9 @@ def main():
         json.dump(useful_words, f, ensure_ascii=True, indent=4)
 
     english_nouns = asyncio.run(find_most_common_nouns(freq_table))
+    print(english_nouns)
     with open("results/common_nouns.json", "w", encoding="utf-8") as f:
-        json.dump(english_nouns, f, ensure_ascii=False, indent=4)
+        json.dump([{"English": e, "Portuguese": p} for e, p in english_nouns], f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     main()
