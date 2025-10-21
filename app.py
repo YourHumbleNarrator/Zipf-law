@@ -15,6 +15,11 @@ def index():
 def frequency_table_page():
     return render_template("frequency_table.html")
 
+@app.route("/common_nouns")
+def common_nouns_view():
+    return render_template("common_nouns.html")
+
+
 
 
 @app.route("/api/frequency_table")

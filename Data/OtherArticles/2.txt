@@ -1,22 +1,7 @@
-Abstract
-Contexto: A longevidade saudável resulta da interação dinâmica entre fatores ambientais, biológicos e psicossociais, como a saúde e o bem-estar subjetivos.Objetivo: Analisar como o bem-estar subjetivo, a saúde subjetiva, a atividade física e a dieta mediterrânica se relacionam com biomarcadores do envelhecimento e com o número de fármacos prescritos, e como variam em função de grupos diferenciados por idade, sexo e outras variáveis sociodemográficas. Métodos: Utilizou-se uma metodologia transversal não experimental envolvendo 290 pessoas, de 61 a 98 anos de idade, não institucionalizadas, residentes na Região de Coimbra. Os biomarcadores foram recolhidos de relatórios de análises clínicas e os restantes dados, demográficos, psicossociais e do estilo de vida, foram recolhidos através de questionários. Resultados: Verificou-se que o bem-estar subjetivo apresenta invariância em função da idade cronológica e do estado civil, mas não do sexo. A perceção da saúde revelou-se um fator diferenciador da satisfação com a vida, da afetividade negativa, dos sintomas depressivos e da perceção de suporte social, assim como dos biomarcadores fosfatase alcalina, triglicerídeos e HDL e do número de fármacos. A atividade física foi diferenciadora da sintomatologia depressiva, da rede social, do padrão alimentar, da fosfatase alcalina e do número de medicamentos. Conclusões: Destaca-se a estabilidade do bem-estar subjetivo ao longo da idade adulta avançada e observa-se que a maioria dos participantes até 79 anos considera-se de boa saúde. Recomendam-se ações que promovam os afetos positivos, a rede social e a prática de atividade física moderada a intensa, por se revelarem associados ao bem-estar e à saúde física e subjetiva.
-ARTIGO ORIGINAL 
-Revista Portuguesa de Investigação Comportamental e Social 2024 Vol. 10(1): 1–20 
-Portuguese Journal of Behavioral and Social Research 2024 Vol. 10(1): 1–20 
-e-ISSN 2183-4938 
-Departamento de Investigação & Desenvolvimento • Instituto Superior Miguel Torga 
-Longevidade saudável e equilíbrios 
-dinâmicos do bem-estar, da dieta e da 
-atividade física  
-Healthy longevity and dynamic balances of well-being, diet, 
-and physical activity 
-Albertina L. Oliveira 1 
-Tiago J. R. Sousa 2 
-Manuela Alvarez 2 
+
 1 Universidade de Coimbra, Centro de Estudos Interdisciplinares, Faculdade de Psicologia e Ciências da Educação, Coimbra, Portugal 
 2 Universidade de Coimbra, Centro de Investigação em Antropologia e Saúde, Faculdade de Ciências e Tecnologia, Departamento de Ciências da Vida, Coimbra, Portugal 
-Recebido: 20/11/2023; Revisto: 25/01/2024; Aceite: 13/02/2024. 
-https://doi.org/10.31211/rpics.2024.10.1.315 
+
 Resumo 
 Contexto: A longevidade saudável resulta da interação dinâmica entre fatores ambientais, biológicos e psicossociais, como a saúde e 
 o bem-estar subjetivos. Objetivo: Analisar como o bem-estar subjetivo, a saúde subjetiva, a atividade física e a dieta mediterrânica 
@@ -33,37 +18,9 @@ ao longo da idade adulta avançada e observa-se que a maioria dos participantes 
 se ações que promovam os afetos positivos, a rede social e a prática de atividade física moderada a intensa, por se revelarem associados 
 ao bem-estar e à saúde física e subjetiva. 
 Palavras-Chave: Atividade física; Bem-estar subjetivo; Dieta mediterrânica; Indicadores biofisiológicos; Longevidade saudável. 
-DI&D | ISMT  
-rpics@ismt.pt 
-https://rpics.ismt.pt 
-Publicação em Acesso Aberto  
-©2024. A/O(s) Autor(as/es). Este é um artigo de acesso aberto 
-distribuído sob a Licença Creative Commons Attribution, que permite 
-uso, distribuição e reprodução sem restrições em qualquer meio, desde 
-que o trabalho original seja devidamente citado. 
-Albertina L. Oliveira 
-Faculdade de Psicologia e Ciências da Educação, 
-Rua do Colégio Novo,  
-3001-802, Coimbra, Portugal 
-Tel.: +351 962913829 
-E-mail: aolima@fpce.uc.pt 
-Oliveira et al.     
-Longevidade saudável: Equilíbrio entre bem-estar e atividade física 
-Abstract 
-Background: Healthy longevity originates from the dynamic interaction between environmental, biological, and psychosocial factors 
-such as health and subjective well-being. Objective: To analyze how subjective well-being, subjective health, physical activity, and 
-the Mediterranean diet relate to aging biomarkers and the number of prescribed medications and how they vary according to groups 
-differentiated by age, sex, and other sociodemographic variables. Method: A non-experimental cross-sectional methodology was used 
-involving 290 non-institutionalized people aged 61 to 98 years living in the Coimbra Region. The biomarkers were collected from 
-clinical analysis reports, and the remaining demographic, psychosocial, and lifestyle data were collected with questionnaires. Results: 
-It was found that subjective well-being presents invariance as a function of chronological age and marital status but not gender. The 
-perception of health emerged as a differentiating factor for life satisfaction, negative affect, depressive symptoms, and perception of 
-social support, as well as the alkaline phosphatase, triglycerides, and HDL biomarkers and the number of medications. Physical activity 
-differentiated depressive symptoms, the social network, the dietary pattern, alkaline phosphatase, and medications. Conclusions: 
-The stability of subjective well-being throughout advanced adulthood is highlighted, and it is observed that most participants up to 79 
-years of age consider themselves in good health. Actions that promote positive affect, social networking, and the practice of moderate 
-to intense physical activity are recommended, as they are associated with physical and subjective health and subjective well-being. 
-Keywords: Physical activity; Subjective well-being; Mediterranean diet; Biophysiological indicators; Healthy longevity. 
+
+Longevidade saudável: Equilíbrio entre bem-estar e atividade física
+
 Introdução  
 O aumento da esperança de vida e do envelhecimento populacional têm acentuado a importância das 
 investigações se centrarem na compreensão da relação entre o avanço da idade e a saúde, à luz de uma 
