@@ -331,6 +331,24 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 8px var(--glow-color);
 }
 
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      background: var(--primary-deep);
+      box-shadow: 0 0 10px var(--text-dark);
+    }
+    th, td {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background: var(--secondary-accent);
+      color: white;
+    }
+
+
+
 /* --- Footer --- */
 .footer {
     text-align: center;

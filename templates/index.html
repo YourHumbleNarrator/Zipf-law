@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kompilator języka Giava do C</title>
+    <title>Portuguese language corpus Analyses</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
@@ -12,15 +12,14 @@
     <div class="container">
         <header class="header">
             <div class="header-text">
-                <h1>Lorem impsum</h1>
-                <p>Lorem impsum</p>
+                <h1>Zipf-law overview</h1>
+                <p>Portuguese language corpus Analyses</p>
             </div>
-            <div class="header-buttons">
-                <span class="skill-tag" id="compile-btn">1</span>
-                <span class="skill-tag" id="load-btn">2</span>
-                <input type="file" id="file-input" style="display:none" accept=".txt,.giava,.java,.c"/>
-                <span class="skill-tag" id="save-btn">Zapisz do pliku</span>
-                <span class="skill-tag" id="white-mode">Dark Mode</span>
+            <div class="header-buttons" id="data-buttons">
+                <span class="skill-tag" id="average-btn"></span>
+                <span class="skill-tag" id="stddev-btn"></span>
+                <span class="skill-tag" id="variance-btn"></span>
+
             </div>
         </header>
 
@@ -28,26 +27,24 @@
 
             <aside class="sidebar">
                 <section class="main-section card fade-in" id="section0">
-                    <h2>Input</h2>
-                    <p>
-                        dddddd
-                    </p>
+                    <h2>Corpus Statistics</h2>
+                    <p id="corpus_stats">Corpus contains:</p>
                 </section>
             </aside>
 
             <main class="main-column">
                 <section class="main-section card fade-in" id="section1">
-                    <h2>ddd</h2>
-                    <pre id="messages"></pre>
+                    <h2><a href="/frequency_table">Frequency table</a></h2>
+                    <p>
+                         This link takes you to the table of each portuguese word in the corpus with its number of occurrences.
+                    </p>
                 </section>
 
                 <section class="main-section card fade-in" id="section2">
-                    <h2>Output</h2>
+                    <h2><a href="/common_nouns">Common Nouns</a></h2>
                     <p>
-                        Lorem impsum
-                        <a href="/frequency_table">Frequency table</a>
+                        Here you can find 50 most common/useful portuguese nouns with their english translations based on the corpus.
                     </p>
-                    <pre id="output"></pre>
                 </section>
             </main>
         </div>
@@ -60,7 +57,7 @@
 
 <!--Skrypty:-->
 
-    <script src="{{ url_for('static', filename='mylang.js') }}"></script>
+    <script src="{{ url_for('static', filename='stats.js') }}"></script>
 
 
 

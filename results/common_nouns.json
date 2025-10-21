@@ -9,7 +9,7 @@
     },
     {
         "English": "water",
-        "Portuguese": "água"
+        "Portuguese": "\u00e1gua"
     },
     {
         "English": "wind",
@@ -24,8 +24,8 @@
         "Portuguese": "santos"
     },
     {
-        "English": "simões",
-        "Portuguese": "simões"
+        "English": "sim\u00f5es",
+        "Portuguese": "sim\u00f5es"
     },
     {
         "English": "winds",
@@ -45,27 +45,27 @@
     },
     {
         "English": "century",
-        "Portuguese": "século"
+        "Portuguese": "s\u00e9culo"
     },
     {
         "English": "Earth",
         "Portuguese": "terra"
     },
     {
-        "English": "activity",
-        "Portuguese": "atividade"
-    },
-    {
         "English": "study",
         "Portuguese": "estudo"
     },
     {
-        "English": "winston",
-        "Portuguese": "winston"
+        "English": "activity",
+        "Portuguese": "atividade"
     },
     {
         "English": "life",
         "Portuguese": "vida"
+    },
+    {
+        "English": "winston",
+        "Portuguese": "winston"
     },
     {
         "English": "art",
@@ -76,10 +76,6 @@
         "Portuguese": "sistema"
     },
     {
-        "English": "time",
-        "Portuguese": "vez"
-    },
-    {
         "English": "tile",
         "Portuguese": "azulejo"
     },
@@ -88,12 +84,16 @@
         "Portuguese": "et"
     },
     {
-        "English": "tiles",
-        "Portuguese": "azulejaria"
+        "English": "time",
+        "Portuguese": "vez"
     },
     {
         "English": "air",
         "Portuguese": "ar"
+    },
+    {
+        "English": "tiles",
+        "Portuguese": "azulejaria"
     },
     {
         "English": "al",
@@ -132,16 +132,16 @@
         "Portuguese": "outras"
     },
     {
-        "English": "days",
-        "Portuguese": "dias"
+        "English": "times",
+        "Portuguese": "vezes"
     },
     {
         "English": "home",
         "Portuguese": "casa"
     },
     {
-        "English": "times",
-        "Portuguese": "vezes"
+        "English": "days",
+        "Portuguese": "dias"
     },
     {
         "English": "people",
@@ -168,12 +168,12 @@
         "Portuguese": "dia"
     },
     {
-        "English": "health",
-        "Portuguese": "saúde"
-    },
-    {
         "English": "work",
         "Portuguese": "obra"
+    },
+    {
+        "English": "health",
+        "Portuguese": "sa\u00fade"
     },
     {
         "English": "madam",
@@ -184,12 +184,12 @@
         "Portuguese": "trabalho"
     },
     {
-        "English": "fence",
-        "Portuguese": "cerca"
-    },
-    {
         "English": "party",
         "Portuguese": "partido"
+    },
+    {
+        "English": "fence",
+        "Portuguese": "cerca"
     },
     {
         "English": "studies",
@@ -197,6 +197,6 @@
     },
     {
         "English": "John",
-        "Portuguese": "joão"
+        "Portuguese": "jo\u00e3o"
     }
 ]

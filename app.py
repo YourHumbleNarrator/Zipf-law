@@ -16,7 +16,7 @@ def frequency_table_page():
     return render_template("frequency_table.html")
 
 @app.route("/common_nouns")
-def common_nouns_view():
+def common_nouns_page():
     return render_template("common_nouns.html")
 
 
@@ -30,6 +30,16 @@ def frequency_table():
 @app.route("/api/common_nouns")
 def common_nouns():
     return jsonify(json.loads((RESULTS_PATH / "common_nouns.json").read_text()))
+
+
+@app.route("/api/zipf_stats")
+def zipf_stats():
+    return jsonify(json.loads((RESULTS_PATH / "zipf_stats.json").read_text()))
+
+
+@app.route("/api/corpus_stats")
+def corpus_stats():
+    return jsonify(json.loads((RESULTS_PATH / "folder_sums.json").read_text()))
 
 
 if __name__ == "__main__":

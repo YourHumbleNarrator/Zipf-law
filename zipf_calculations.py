@@ -21,14 +21,19 @@ def main():
     file_list = read_files("Data")
     list_of_texts = [x[1] for x in file_list]
     list_of_tokens = [tokenize_text(text) for text in list_of_texts]
+    folder_sums = {}
     flat_list = []
-    i=0
-    for sublist in list_of_tokens:
-        print(f'{file_list[i][0]}: {len(sublist)}')
-        i+=1
+
+    for i, sublist in enumerate(list_of_tokens):
+        folder_name = file_list[i][0].split("\\")[1]
+        folder_sums[folder_name] = folder_sums.get(folder_name, 0) + len(sublist)
         for token in sublist:
             flat_list.append(token)
-    print(f"Corpus contains: {len(flat_list)} words.")
+    folder_sums["all"] = len(flat_list)
+
+    with open("results/folder_sums.json", "w", encoding="utf-8") as f:
+        json.dump(folder_sums, f, ensure_ascii=False, indent=4)
+
 
     freq_table = create_frequency_table(flat_list)
     print(freq_table.head())
@@ -53,7 +58,7 @@ def main():
     english_nouns = asyncio.run(find_most_common_nouns(freq_table))
     print(english_nouns)
     with open("results/common_nouns.json", "w", encoding="utf-8") as f:
-        json.dump([{"English": e, "Portuguese": p} for e, p in english_nouns], f, ensure_ascii=False, indent=4)
+        json.dump([{"English": e, "Portuguese": p} for e, p in english_nouns], f, ensure_ascii=True, indent=4)
 
 if __name__ == "__main__":
     main()
